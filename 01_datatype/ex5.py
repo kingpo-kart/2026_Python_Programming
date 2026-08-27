@@ -38,3 +38,37 @@ print("Python" in s) #True
 print("Java" in s) #False
 print("Python" not in s) #False
 print("Java" not in s) #True
+
+#특정 prefix(접두사)로 시작하는지 여부를 알려주는 문자열 메소드
+print(s.startswith("Python")) #True
+
+#이전 문자열을 새로운 문자열로 치환하는 문자열 메소드
+#문제) replace는 원본 문자열을 바꿀까요? 새로운 문자열을 반환할까요? 답) 새로운 문자열을 반환합니다.
+print(s.replace("Python", "C")) #C is fun. I love C.
+print(s.replace("Python", "C", 1)) #C is fun. I love Python.
+
+#판별 문자열 메소드 (isXXX())
+print("123".isdigit()) #True
+print("abc".isalpha()) #True
+print("123abc".isalnum()) #True
+print(" \t \n".isspace()) #True
+print("hello".islower()) #True
+print("HELLO".isupper()) #True
+print("".isnumeric()) #한자
+
+#구분자를 기준으로 문자열을 나누어 리스트로 반환하는 문자열 메소드
+s = "apple, banana, kiwi"
+fruits = s.split(", ") #구분자: ", "
+print(fruits) #['apple', 'banana', 'kiwi']
+
+#Iterable(반복가능) 객체를 구분자를 기준으로 문자열로 합쳐주는 문자열 메소드
+print(", ".join(fruits)) #apple, banana, kiwi
+
+s = "  hello world  "
+result = s.strip().upper()
+print(result)
+
+email = "abcd@dimigo.hs.kr"
+print("@dimigo.hs.kr" in email)
+
+sentence = ""
