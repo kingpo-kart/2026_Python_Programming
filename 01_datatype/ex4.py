@@ -49,5 +49,5 @@ num = 123456789
 
 print(f"{num:,}")
 print(f"{num:15d}")
-print(f"{num:<15d}")
+print(f"{num:<15,d}")
 print(f"{num:015d}")

@@ -17,6 +17,7 @@ print(a, b)
 x = y = z = 0;
 a, b = 2, 3
 print(a, b)
+print(x, y, z)
 
 # 값 swap
 temp = a

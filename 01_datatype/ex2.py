@@ -18,7 +18,8 @@ print(x)
 # 오버플로우 테스트
 a = 2 ** 31 - 1
 print(a)
-a = a + 1
+a = a * 2
+print(a)
 
 #실수향(float)
 b = 3.14
