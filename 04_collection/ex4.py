@@ -132,3 +132,15 @@ stocks = (
 total = sum(b * c for _, b, c in stocks)
 
 print(f"총액: {total:,}원")                                           # ✅ 총액: 21,000원
+
+stocks = (
+    ("사과", "바나나", "체리"),
+    (1000, 2000, 5000),
+    (5, 3, 2),
+)
+at = stocks[0]
+bt = stocks[1]
+ct = stocks[2]
+
+total = sum(b * c for _, b, c in zip(at, bt, ct))
+print(f"총액: {total:,}원")
