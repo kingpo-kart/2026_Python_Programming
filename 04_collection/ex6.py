@@ -86,7 +86,7 @@ for w in words:
 print(count)
 
 # 2) dict comprehension
-count = {w: words.count(w) for w in words}
+count = {w: words.count(w) for w in set(words)}
 
 print(count)
 
